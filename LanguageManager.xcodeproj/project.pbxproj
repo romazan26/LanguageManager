@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		30724A7E2C8196BE00B329CE /* LanguageManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30724A7D2C8196BE00B329CE /* LanguageManagerApp.swift */; };
-		30724A802C8196BE00B329CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30724A7F2C8196BE00B329CE /* ContentView.swift */; };
+		30724A802C8196BE00B329CE /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30724A7F2C8196BE00B329CE /* FirstView.swift */; };
 		30724A822C8196BF00B329CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30724A812C8196BF00B329CE /* Assets.xcassets */; };
 		30724A852C8196BF00B329CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30724A842C8196BF00B329CE /* Preview Assets.xcassets */; };
+		30724A8D2C81970E00B329CE /* LanguageManagerSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 30724A8C2C81970E00B329CE /* LanguageManagerSwiftUI */; };
+		30724A922C819A1A00B329CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30724A912C819A1A00B329CE /* Localizable.strings */; };
+		30724A972C819DE600B329CE /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30724A962C819DE600B329CE /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30724A7A2C8196BE00B329CE /* LanguageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30724A7D2C8196BE00B329CE /* LanguageManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManagerApp.swift; sourceTree = "<group>"; };
-		30724A7F2C8196BE00B329CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30724A7F2C8196BE00B329CE /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		30724A812C8196BF00B329CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30724A842C8196BF00B329CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30724A902C819A1A00B329CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30724A932C819A1C00B329CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30724A942C819C7200B329CE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30724A962C819DE600B329CE /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30724A8D2C81970E00B329CE /* LanguageManagerSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				30724A7D2C8196BE00B329CE /* LanguageManagerApp.swift */,
-				30724A7F2C8196BE00B329CE /* ContentView.swift */,
+				30724A7F2C8196BE00B329CE /* FirstView.swift */,
+				30724A962C819DE600B329CE /* SecondView.swift */,
+				30724A912C819A1A00B329CE /* Localizable.strings */,
 				30724A812C8196BF00B329CE /* Assets.xcassets */,
 				30724A832C8196BF00B329CE /* Preview Content */,
 			);
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = LanguageManager;
+			packageProductDependencies = (
+				30724A8C2C81970E00B329CE /* LanguageManagerSwiftUI */,
+			);
 			productName = LanguageManager;
 			productReference = 30724A7A2C8196BE00B329CE /* LanguageManager.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +122,13 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				fr,
 			);
 			mainGroup = 30724A712C8196BE00B329CE;
+			packageReferences = (
+				30724A8B2C81970E00B329CE /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */,
+			);
 			productRefGroup = 30724A7B2C8196BE00B329CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30724A852C8196BF00B329CE /* Preview Assets.xcassets in Resources */,
+				30724A922C819A1A00B329CE /* Localizable.strings in Resources */,
 				30724A822C8196BF00B329CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +156,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30724A802C8196BE00B329CE /* ContentView.swift in Sources */,
+				30724A972C819DE600B329CE /* SecondView.swift in Sources */,
+				30724A802C8196BE00B329CE /* FirstView.swift in Sources */,
 				30724A7E2C8196BE00B329CE /* LanguageManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30724A912C819A1A00B329CE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30724A902C819A1A00B329CE /* en */,
+				30724A932C819A1C00B329CE /* ru */,
+				30724A942C819C7200B329CE /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		30724A862C8196BF00B329CE /* Debug */ = {
@@ -277,8 +310,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,9 +320,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = home.LanguageManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,8 +343,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +353,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = home.LanguageManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30724A8B2C81970E00B329CE /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Abedalkareem/LanguageManager-SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30724A8C2C81970E00B329CE /* LanguageManagerSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30724A8B2C81970E00B329CE /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */;
+			productName = LanguageManagerSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30724A722C8196BE00B329CE /* Project object */;
 }

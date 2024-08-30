@@ -1,0 +1,15 @@
+{
+  "originHash" : "45e2b02eaf54a33bab2df372593365a2b3836105248446e7c8858d6d7163f4b8",
+  "pins" : [
+    {
+      "identity" : "languagemanager-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Abedalkareem/LanguageManager-SwiftUI.git",
+      "state" : {
+        "revision" : "429ce35c2f82f05d69a6042f50ff622fc0422704",
+        "version" : "0.0.6"
+      }
+    }
+  ],
+  "version" : 3
+}

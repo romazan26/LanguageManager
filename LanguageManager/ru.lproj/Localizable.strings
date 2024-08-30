@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TestChangeLanguage
+
+  Created by Роман on 29.08.2024.
+  
+*/
+
+"text" = "В приведенном примере показана реализация смены языка";
+"text2" = "текст второго экрана";
+"textButton" = "Следующий экрна";
